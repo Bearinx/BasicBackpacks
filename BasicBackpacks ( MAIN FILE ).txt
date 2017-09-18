@@ -57,7 +57,7 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
        
         public void onEnable() {
                 Bukkit.getServer().getPluginManager().registerEvents(this, this);
-                getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "\n\nBasicBackspacks V0.1 Has been succesfully enabled!\n\n");
+                getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "\n\nBasicBackspacks V0.3 Has been succesfully enabled!\n\n");
         }
        
         public void onDisable() {
@@ -91,15 +91,15 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
                         p.openInventory(BasicBackpacks.get(p.getUniqueId()));
                         p.sendMessage(ChatColor.GRAY + "Opening your personal backpack!");
                 }
-                if (cmd.getName().equalsIgnoreCase("basicbackpacks")) {
-                		p.sendMessage(ChatColor.GRAY + "BasicBackpacksBETA Created By" + ChatColor.AQUA + ChatColor.UNDERLINE + ChatColor.ITALIC + "FrostedWeFall");
-                		p.sendMessage(ChatColor.GRAY + "Please report any issues at" + ChatColor.AQUA + ChatColor.UNDERLINE + "https://github.com/TheRealFrostedWeFall/BasicBackpacks/issues");
+                if (cmd.getName().equalsIgnoreCase("bbp")) {
+                		p.sendMessage(ChatColor.GRAY + "BasicBackpacksBETA Created By FrostedWeFall");
+                		p.sendMessage(ChatColor.GRAY + "Please report any issues at https://github.com/TheRealFrostedWeFall/BasicBackpacks/issues");
                 }
                 if (cmd.getName().equalsIgnoreCase("bbhelp")) {
                 		p.sendMessage(ChatColor.GRAY + "-----+--------------------+-----");
-                		p.sendMessage(ChatColor.AQUA + "BasicBackpacks V0.1 BETA");
-                		p.sendMessage(ChatColor.GRAY + "/backpack -" + ChatColor.AQUA + "Opens your personal backpack!");
-                		p.sendMessage(ChatColor.GRAY + "/basicbackpacks -" + ChatColor.AQUA + "Info menu about the BasicBackpacks plugin!");
+                		p.sendMessage(ChatColor.AQUA + "BasicBackpacks V0.2 BETA By FrostedWeFall");
+                		p.sendMessage(ChatColor.GRAY + "/backpack -" + ChatColor.AQUA + " Opens your personal backpack!");
+                		p.sendMessage(ChatColor.GRAY + "/bbp -" + ChatColor.AQUA + " Info menu about the BasicBackpacks plugin!");
                 		p.sendMessage(ChatColor.GRAY + "-----+--------------------+-----");
                 }
                 return true;
@@ -116,3 +116,5 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
                 return new ItemStack(Material.valueOf(section.getString("type")), section.getInt("amount"));
                 // Load more information.
         }
+}
+        
