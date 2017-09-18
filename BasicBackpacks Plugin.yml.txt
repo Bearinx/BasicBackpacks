@@ -1,14 +1,14 @@
 name: BasicBackpacks
 main: FrostedWeFall.BasicBackpacks.BasicBackpacks
 author: FrostedWeFall
-version: 0.1
+version: 0.2
 description: A PlayerVaults like plugin but with Backpacks!
 
 commands:
     backpack:
         usage: /<command>
         description: The main command for the BasicBackpacks plugin
-    basicbackpack:
+    bbp:
         usage: /<command>
         description: An info command about the plugin
     bbhelp:
