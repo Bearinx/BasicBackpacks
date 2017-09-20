@@ -57,11 +57,11 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
        
         public void onEnable() {
                 Bukkit.getServer().getPluginManager().registerEvents(this, this);
-                getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "\n\nBasicBackspacks V0.3 Has been succesfully enabled!\n\n");
+                getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "\n\nBasicBackpacks V0.4 Has been succesfully enabled!\n\n");
         }
        
         public void onDisable() {
-        	getServer().getConsoleSender().sendMessage(ChatColor.RED + "\n\nBasicBackspacks V0.1 Has been succesfully disabled!\n\n");
+        	getServer().getConsoleSender().sendMessage(ChatColor.RED + "\n\nBasicBackpacks V0.4 Has been succesfully disabled!\n\n");
                 for (Entry<UUID, Inventory> entry : BasicBackpacks.entrySet()) {
                         if (!getConfig().contains("BasicBackpacks." + entry.getKey())) {
                                 getConfig().createSection("BasicBackpacks." + entry.getKey());
@@ -97,7 +97,7 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
                 }
                 if (cmd.getName().equalsIgnoreCase("bbhelp")) {
                 		p.sendMessage(ChatColor.GRAY + "-----+--------------------+-----");
-                		p.sendMessage(ChatColor.AQUA + "BasicBackpacks V0.2 BETA By FrostedWeFall");
+                		p.sendMessage(ChatColor.AQUA + "BasicBackpacks V0.4 BETA By FrostedWeFall");
                 		p.sendMessage(ChatColor.GRAY + "/backpack -" + ChatColor.AQUA + " Opens your personal backpack!");
                 		p.sendMessage(ChatColor.GRAY + "/bbp -" + ChatColor.AQUA + " Info menu about the BasicBackpacks plugin!");
                 		p.sendMessage(ChatColor.GRAY + "-----+--------------------+-----");
@@ -117,4 +117,6 @@ public class BasicBackpacks extends JavaPlugin implements Listener {
                 // Load more information.
         }
 }
+        
+        
         
