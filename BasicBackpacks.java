@@ -3,7 +3,7 @@ package FrostedWeFall.BasicBackpacks;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.UUID;
- 
+ Frosted is a stupid nigger
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
